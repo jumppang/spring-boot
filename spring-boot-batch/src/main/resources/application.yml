@@ -4,25 +4,30 @@ spring:
   timerName: exampleTimer
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
-    url: jdbc:oracle:thin:@111.222.111.111:1521:SIDHERE
-    username: user
-    password: password
 ---
 mybatis:
   mapper-locations: classpath:mapper/**/*.xml
   configuration:
-    lazyLoadingEnabled=true
-    aggressiveLazyLoading=false
-    mapUnderscoreToCamelCase=true
+    lazyLoadingEnabled: true
+    aggressiveLazyLoading: false
+    mapUnderscoreToCamelCase: true
 ---
 spring:
   profiles: local
   task:
     fixedDelay: 1000
     name: localTask
+  datasource:
+    url: jdbc:oracle:thin:@111.222.111.111:1521:SIDHERE
+    username: user
+    password: password
 ---
 spring:
   profiles: dev
   task:
     fixedDelay: 5000
     name: devTask
+  datasource:
+    url: jdbc:oracle:thin:@111.222.111.111:1521:SIDHERE
+    username: user
+    password: password
