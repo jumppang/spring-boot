@@ -16,7 +16,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="net.donnert.spring.boot.TestMapper">
     <select id="getValueFromDatabase" resultType="String">
-    	SELECT PAYMENT_CORP_NAME FROM UPAY_PAYMENT_CORP
-        WHERE PAYMENT_CORP_CODE='0000'
+    	SELECT 'TEST' FROM DUAL
     </select>
 </mapper>
