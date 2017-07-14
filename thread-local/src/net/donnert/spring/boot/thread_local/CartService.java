@@ -1,4 +1,4 @@
-package net.ezens.spring.boot.thread_local;
+package net.donnert.spring.boot.thread_local;
 
 import org.springframework.stereotype.Service;
 

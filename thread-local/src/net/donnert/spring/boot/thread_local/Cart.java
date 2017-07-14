@@ -1,4 +1,7 @@
-package net.ezens.spring.boot.thread_local;
+package net.donnert.spring.boot.thread_local;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 public class Cart {
 	private int apple = 0;
@@ -22,6 +25,4 @@ public class Cart {
 		return "Cart [apple=" + apple + ", orange=" + orange + ", melon="
 				+ melon + "]";
 	}
-
-	
 }

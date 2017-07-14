@@ -1,4 +1,4 @@
-package net.ezens.spring.boot.thread_local;
+package net.donnert.spring.boot.thread_local;
 
 public class ThreadRepository {
 	private static ThreadLocal<Cart> threadLocal = new ThreadLocal<Cart>() {
@@ -10,5 +10,9 @@ public class ThreadRepository {
 	
 	public static Cart getCart() {
 		return threadLocal.get();
+	}
+	
+	public static void remove() {
+		threadLocal.remove();
 	}
 }
