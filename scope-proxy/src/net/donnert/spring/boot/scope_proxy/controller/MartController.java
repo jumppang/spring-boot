@@ -27,8 +27,11 @@ public class MartController {
 
 	@RequestMapping("")
 	private String mail() {
+
 		cartService.addApple();
+
 		martService.cartAdded();
+
 		return String.format("%s, %s", cart.toString(), mart.toString());
 	}
 
