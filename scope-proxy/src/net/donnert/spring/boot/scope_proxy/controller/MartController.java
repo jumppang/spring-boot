@@ -26,8 +26,8 @@ public class MartController {
 	private Mart mart;
 
 	@RequestMapping("")
-	private String mail() {
-
+	private String mart() {
+		
 		cartService.addApple();
 
 		martService.cartAdded();
