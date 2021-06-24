@@ -1,5 +1,5 @@
 package net.donnert.spring.boot;
 
-public interface TestMapper {
+public interface TestMapper { 
 	public String getValueFromDatabase();
 }
